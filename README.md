@@ -3,11 +3,11 @@
 ###Demo pics:
 
 <p align="center">
-    ![alt tag](http://i.imgur.com/a4twjjq.png)
+    <img src="http://i.imgur.com/a4twjjq.png">
 
-    ![alt tag](http://i.imgur.com/UmYJ9i8.png)
+    <img src="http://i.imgur.com/UmYJ9i8.png">
 
-    ![alt tag](http://i.imgur.com/HkNVHFi.png)
+    <img src="http://i.imgur.com/HkNVHFi.png">
 </p>
 
 ###Requirement: JRE 8+
