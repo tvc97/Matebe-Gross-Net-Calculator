@@ -2,10 +2,12 @@
 
 ###Demo pics:
 
-->![alt tag](http://i.imgur.com/a4twjjq.png)<-
+<p align="center">
+    ![alt tag](http://i.imgur.com/a4twjjq.png)
 
-->![alt tag](http://i.imgur.com/UmYJ9i8.png)<-
+    ![alt tag](http://i.imgur.com/UmYJ9i8.png)
 
-->![alt tag](http://i.imgur.com/HkNVHFi.png)<-
+    ![alt tag](http://i.imgur.com/HkNVHFi.png)
+</p>
 
 ###Requirement: JRE 8+
