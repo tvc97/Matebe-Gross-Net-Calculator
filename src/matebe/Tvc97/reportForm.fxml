@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="720.0" prefWidth="860.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matebe.Tvc97.ReportFormController">
+    <stylesheets>
+        <URL value="@reportform.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="6.0" layoutY="5.0" prefHeight="584.0" prefWidth="629.0" style="-fx-background-color: #ffffff;" vbarPolicy="ALWAYS" vmax="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1210.0" prefWidth="750.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <VBox layoutX="13.0" layoutY="14.0" prefHeight="1108.0" prefWidth="725.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FlowPane alignment="CENTER" prefHeight="136.0" prefWidth="725.0">
+                           <children>
+                              <ImageView fitHeight="107.0" fitWidth="439.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/res/logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </FlowPane>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" top="5.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <VBox prefHeight="65.0" prefWidth="599.0" style="-fx-border-color: #e0e0e0;">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="180.0" text="GROSS:" textFill="#ff001a">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbGROSS" textFill="#ff001a">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #f5f5f5;">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="180.0" text="NET:" textFill="#ff001a">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lbNET" textFill="#ff001a">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label text="Diễn giải chi tiết (VND):" textFill="#174886">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="362.0" prefWidth="725.0" style="-fx-border-color: #e0e0e0;">
+                           <children>
+                              <VBox prefHeight="363.0" prefWidth="540.0" styleClass="borderBottom">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: #f5f5f5;" text="Lương GROSS:">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: #fafafa;" text="Bảo hiểm xã hội:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" text="Bảo hiểm y tế:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: #fafafa;" text="Bảo hiểm thất nghiệp:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: #f5f5f5;" text="Thu nhập trước thuế:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: #fafafa;" text="Giảm trừ gia cảnh cá nhân:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" text="Giảm trừ gia cảnh người phụ thuộc:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color:  #f5f5f5;" text="Thu nhập chịu thuế:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: #fafafa;" text="Thuế thu nhập cá nhân (*):">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: #f5f5f5;" text="Lương NET:">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="239.0" styleClass="borderBottom">
+                                 <children>
+                                    <Label fx:id="lbGross" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color: #f5f5f5;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbBHXH" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color: #fafafa;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbBHYT" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbBHTN" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color: #fafafa;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbThuNhapTruocThue" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color:  #f5f5f5;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbGTGCCN" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color: #fafafa;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbGTGCPT" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbThuNhapChiuThue" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color:  #f5f5f5;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbThueTNCN" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color: #fafafa;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbNet" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="239.0" style="-fx-background-color: #f5f5f5;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Chi tiết thuế thu nhập cá nhân (VND):" textFill="#174886">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="289.0" prefWidth="725.0" style="-fx-border-color: #e0e0e0;" styleClass="borderBottom">
+                           <children>
+                              <VBox prefHeight="153.0" prefWidth="300.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="305.0" style="-fx-background-color: #f5f5f5;" text="Mức chịu thuế">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="315.0" style="-fx-background-color: #f7f7f7;" text="Dưới 5 triệu đồng (≤5tr)">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="315.0" text="5 đến 10 triệu đồng (5tr &lt; x ≤ 10tr)">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="315.0" style="-fx-background-color: #f7f7f7;" text="10 đến 18 triệu đồng (10tr &lt; x ≤ 18tr)">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="315.0" text="18 đến 32 triệu đồng (18tr &lt; x ≤ 32tr)">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="315.0" style="-fx-background-color: #f7f7f7;" text="32 đến 52 triệu đồng (32tr &lt; x ≤ 52tr)">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="315.0" text="52 đến 80 triệu đồng (52tr &lt; x ≤ 80tr)">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="315.0" style="-fx-background-color: #f7f7f7;" text="Trên 80 triệu đồng (&gt;80tr)">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="153.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" style="-fx-background-color: #f5f5f5;" text="Thuế suất">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" style="-fx-background-color: #f7f7f7;" text="5%">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" text="10%">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" style="-fx-background-color: #f7f7f7;" text="15%">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" text="20%">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" style="-fx-background-color: #f7f7f7;" text="25%">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" text="30%">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="202.0" style="-fx-background-color: #f7f7f7;" text="35%">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="153.0" prefWidth="225.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="242.0" style="-fx-background-color: #f5f5f5;" text="Tiền nộp">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTax0" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="226.0" style="-fx-background-color: #f7f7f7;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTax1" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="226.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTax2" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="226.0" style="-fx-background-color: #f7f7f7;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTax3" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="226.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTax4" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="226.0" style="-fx-background-color: #f7f7f7;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTax5" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="226.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbTax6" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="226.0" style="-fx-background-color: #f7f7f7;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Người sử dụng lao động trả (VND):" textFill="#174886">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="183.0" prefWidth="725.0" style="-fx-border-color: #e0e0e0;" styleClass="borderBottom">
+                           <children>
+                              <VBox prefHeight="217.0" prefWidth="540.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="546.0" style="-fx-background-color: #f8f8f8;" text="Lương GROSS">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="546.0" text="Bảo hiểm xã hội (18%)">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="546.0" style="-fx-background-color: #f8f8f8;" text="Bảo hiểm y tế (3%)">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="546.0" text="Bảo hiểm thất nghiệp (1%)">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="546.0" style="-fx-background-color: #f5f5f5;" text="Tổng cộng">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="181.0" prefWidth="186.0">
+                                 <children>
+                                    <Label fx:id="lbSDLDGross" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="197.0" style="-fx-background-color: #f8f8f8;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbSDLDBHXH" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="197.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbSDLDBHYT" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="197.0" style="-fx-background-color: #f8f8f8;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbSDLDBHTN" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="197.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lbSDLDTotal" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="197.0" style="-fx-background-color: #f5f5f5;">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+         <padding>
+            <Insets left="55.0" right="55.0" />
+         </padding>
+      </ScrollPane>
+   </children>
+</AnchorPane>
