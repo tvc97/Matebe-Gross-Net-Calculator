@@ -4,9 +4,9 @@
 
 ###Notes:
 
-June 13, 2016: Submitted !!!
-June 20, 2016: Won the 1st place !!!
-June 24, 2016: Open source !!!
+<p>June 13, 2016: Submitted !!!</p>
+<p>June 20, 2016: Won the 1st place !!!</p>
+<p>June 24, 2016: Open source !!!</p>
 
 ###Demo pics:
 
